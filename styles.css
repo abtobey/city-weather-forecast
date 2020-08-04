@@ -1,0 +1,82 @@
+.container{
+    margin-right:0;
+    margin-left:0;
+}
+
+.future{
+    background-color: blue;
+    color:red;
+    margin-top:10px;
+    margin-bottom:10px;
+    border-radius: 15px;
+    margin-left: 8.3%;
+    font-weight:bold;
+}
+#todayForecast{
+    border: 1px solid black;
+    margin-top:10px;
+    background-color: white;
+    border-radius: 15px;
+    line-height: 2;
+    width:90%;
+    margin-left:5%;
+    margin-bottom: 20px;
+}
+#jumbo{
+    background-color: black;
+    color:white;
+    text-align:center;
+    z-index:1;
+    min-height:150px;
+    margin-bottom:0;
+    padding:0;
+    display: flex;
+  
+}
+label{
+    text-align: center;
+    font-weight: bold;
+    margin-left:20px;
+}
+.sideNavButton{
+    width:90%;
+    margin-left:5%;
+    margin-bottom: 10px;
+}
+#sideNavContents{
+    margin-left:20px;
+    margin-right:20px;
+}
+.forecast{
+    text-align:center;
+}
+.low{
+    background-color:green;
+}
+.med{
+    background-color:yellow;
+}
+.high{
+    background-color:orange;
+}
+.veryHigh{
+    background-color:red;
+}
+
+@media screen and (min-width: 1024px){
+    .sideNav{
+        height: 100vh; /* Full-height: remove this if you want "auto" height */
+        width: 250px; /* Set the width of the sidebar */
+        z-index: 0;
+       background-color: #eee;
+        overflow-x: hidden; 
+        padding-top: 20px;
+    }
+    .future{
+        margin:auto;
+    }
+    h1{
+        margin-top:30px;
+    }
+
+}

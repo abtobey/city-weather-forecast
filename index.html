@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+    
+</head>
+<body>
+    <div class="jumbotron jumbotron-fluid" id="jumbo">
+        <div class="container">
+          <h1 class="display-4">Weather Dashboard</h1>
+        </div>
+      </div>
+    
+        <div class="row">
+            <div class="sideNav col-md-4 col-12">
+                <div id="sideNavContents">
+                <h2>Search for a city:</h2>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="City Name" id="cityInput">
+                    <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button" id="getForecast">&#x1F50D</button>
+                    </div>
+                </div>
+                <div id="cityList"></div>
+                </div>
+            </div>
+            <section class="forecast col-md-8 col-12" style="visibility:hidden;">
+                <div id="todayForecast">
+
+                </div>
+            <h2>5 Day Forecast:</h2>
+            <div class="row">
+                <div class="future col-lg-2 col-10" id="fiveDay1"></div>
+                <div class="future col-lg-2 col-10" id="fiveDay2"></div>
+                <div class="future col-lg-2 col-10" id="fiveDay3"></div>
+                <div class="future col-lg-2 col-10" id="fiveDay4"></div>
+                <div class="future col-lg-2 col-10" id="fiveDay5"></div>
+            </div>
+            </section>
+        </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> 
+    <script src="./script.js"></script>
+</body>
+</html>
